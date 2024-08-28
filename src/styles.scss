@@ -1,10 +1,40 @@
+.main-content{
+  padding:20px;
+}
+
+.card-custom{
+  margin-bottom: 20px;
+  background-color: rgb(151, 216, 223);
+  // max-width: 2200px;  makes the cards response and setting them into a w or h desired and when see it by small devices it shrinks
+  // width: 100%; 
+
+}
+
+.background::after{
+  // background-image: url(/assets/GGC-Library.jpg);
+opacity: 0.75;
+}
+
+
 body {
-    background-image: url('/assets/GGC-Library.jpg');
-    background-size: cover;
+  background-image: url('/assets/GGC-Library.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: url('/assets/GGCLib Mobile.jpg');
+    background-size:contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    opacity: 1.75;
+    opacity: 0.9;
     z-index: -1;
   }
-  
+}
+

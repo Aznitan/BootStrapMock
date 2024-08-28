@@ -1,53 +1,107 @@
-<div class ="navbar">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">GHS</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Partners</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" >
-            Projects
-          </a>
-          
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-disabled="true">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-disabled="true">?</a>
-        </li>
-      </ul>
-      
+<header>
+  <div class="navbar">
+    <nav class="navbar navbar-expand-xxl fixed-top navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color: #4169E1;" href="#">
+          <img src="/assets/Designer.png" class="img-fluid mb-2" style="width: 58px; height: 58px; " alt="Profile's Picture">
+          Green Healthy Schools</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" style="color: #4169E1; padding-left: 3rem;" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #4169E1; padding-left: 3rem;" href="#">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #4169E1; padding-left: 3rem;" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #4169E1; padding-left: 3rem;" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #4169E1; padding-left: 3rem;" href="#">?</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="container-fluid main-content mt-5 pt-5 ">
+  <div class="row g-4">
+    <!--Row 1-->
+    <div class="col-12">
+      <div class="card card-custom "  >
+        <div class="card-body d-flex align-items-center">
+          <!-- Profile Image and Button -->
+          <div class="d-flex flex-column align-items-center me-3">
+            <img src="/assets/ProfilePicHolder.png" class="img-fluid mb-2" style="width: 150px; height: auto;" alt="Profile's Picture">
+            <button class="btn btn-primary mt-2" routerLink="/teacher-profile">Edit</button>
+          </div>
+    
+          <!-- Profile Information -->
+          <div>
+            <h5 class="card-title">Profile's Name</h5>
+            <p class="card-text">School Name, Grades.</p>
+            <p class="card-text">Emailatemail.com.</p>
+            <p class="card-text">Profile Bio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Row 2-->
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="card card-custom">
+        <div class="card-body">
+          <h5 class="card-title">Preferred Projects</h5>
+          <p class="card-text">Quick example text about Preferred Teacher Projects.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="card card-custom">
+     
+        <div class="card-body "style="overflow-y: auto; max-height: 200px;">
+          <h5 class="card-title"  >Projects</h5>
+            <!-- InsideCards -->
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">Details about Project 1.</p>
+              </div>
+            </div>
+  
+            <div class="card mb-3" >
+              <div class="card-body">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">Details about Project 2.</p>
+              </div>
+            </div>
+  
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">Details about Project 3.</p>
+              </div>
+            </div>
+
+
+        </div>
+      </div>
     </div>
   </div>
-</nav>
 </div>
 
-
-<div class="background-container">
-  
-  
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Projects</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
-        <button class="btn btn-primary" routerLink="/teacher-profile">Log In</button>
-    </div>
+<footer>
+  <div class="container-fluid bg-dark text-white p-3 fixed-bottom">
+    <p class="mb-0">GHS Bootstrap Mock by Luis F 2024</p>
   </div>
-  
-  <br>
-
-
-  <br><br>AAAAAA
-</div>
+</footer>
